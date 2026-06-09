@@ -33,4 +33,14 @@ if (int.TryParse(Console.ReadLine(),out int cantTareas))
         Tarea nuevaTarea= new Tarea(id,descripcionSeleccionada,duracionSeleccionada);
         tareasPendientes.Add(nuevaTarea);
     }
+
+    //mostramos
+    Console.WriteLine($"\n--{tareasPendientes.Count} Tareas Cargadas----");
+    foreach (Tarea t in tareasPendientes)
+    {
+        Console.WriteLine($"ID: {t.TareaID} | Descripcion: {t.Descripcion} | Duracion: {t.Duracion} min");
+    }
+
 }
+
+//3
